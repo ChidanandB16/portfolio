@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chidanand B | Full-Stack Developer</title>
+<meta name="description" content="Portfolio of Chidanand B - Full-Stack Developer, ISE student at DSCE Bengaluru, looking for 2027 SDE internships and fresher roles.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg"></canvas>
+<div class="progress" id="progress"></div>
+<header class="nav">
+  <a href="#home" class="logo">CB<span>.</span></a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#looking">Looking For</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button id="theme" aria-label="Toggle theme">&#9680;</button>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <p class="hello">Hi, I'm</p>
+  <h1>Chidanand B</h1>
+  <h2 class="typing"><span id="typed"></span><span class="cursor">|</span></h2>
+  <p class="lead">Final-year Information Science &amp; Engineering student in Bengaluru. I build full-stack web apps from database to UI.</p>
+  <div class="cta">
+    <a class="btn primary" href="#projects">See my work</a>
+    <a class="btn" href="#contact">Get in touch</a>
+    <a class="btn" href="https://drive.google.com/file/d/1T5jCrke6_y74jerCEDt1OOk4ZLUlLbIa/view" target="_blank" rel="noopener">Resume</a>
+  </div>
+</section>
+
+<section id="about" class="reveal">
+  <h3 class="title"><span>01</span> About Me</h3>
+  <div class="grid two">
+    <div>
+      <p>I'm a final-year B.E. student in Information Science &amp; Engineering at Dayananda Sagar College of Engineering, Bengaluru (graduating 2027, CGPA 8.36/10).</p>
+      <p>I like owning a feature end to end: designing REST APIs, modelling the database, building the interface, and wiring up the build and deploy pipeline. Strong foundations in data structures, algorithms, OOP, DBMS, operating systems and networks.</p>
+      <div class="stats">
+        <div><b data-count="8.36" data-dec="2">0</b><small>CGPA</small></div>
+        <div><b data-count="2027">0</b><small>Graduating</small></div>
+        <div><b data-count="3">0</b><small>Featured repos</small></div>
+      </div>
+    </div>
+    <div class="skills" id="skills"></div>
+  </div>
+</section>
+
+<section id="projects" class="reveal">
+  <h3 class="title"><span>02</span> Projects</h3>
+  <div class="grid cards">
+    <article class="card tilt">
+      <h4>Campus-Connect</h4>
+      <p class="tag">Academic management platform</p>
+      <p>Centralised platform for academic operations, enrollments and material distribution, with role-based access for Student, Lecturer and Admin portals (JWT + bcrypt).</p>
+      <ul class="chips"><li>Java SpringBoot</li><li>React.js</li><li>PostgreSQL</li><li>MongoDB</li><li>Jenkins</li><li>Tailwind</li></ul>
+      <a href="https://github.com/ChidanandB16/CAMPUS-CONNECT" target="_blank" rel="noopener">View code &rarr;</a>
+    </article>
+    <article class="card tilt">
+      <h4>Wanderlust</h4>
+      <p class="tag">Airbnb-style stay listings app</p>
+      <p>Interactive accommodation platform: property listings, reviews and search, with geo-location metadata and map-based browsing.</p>
+      <ul class="chips"><li>Node.js</li><li>Express</li><li>JavaScript</li><li>MongoDB</li><li>Render</li></ul>
+      <a href="https://wanderlust-s9l5.onrender.com/listings" target="_blank" rel="noopener">Live demo &rarr;</a>
+      <a href="https://github.com/ChidanandB16/Wonderlust-AIRBNB" target="_blank" rel="noopener">View code &rarr;</a>
+    </article>
+    <article class="card tilt">
+      <h4>COVID Tracking Pipeline</h4>
+      <p class="tag">Data pipeline</p>
+      <p>Data pipeline that ingests CSV data and processes it using AWS services.</p>
+      <ul class="chips"><li>Python</li><li>AWS</li><li>CSV</li></ul>
+      <a href="https://github.com/ChidanandB16/covid-tracking-pipeline" target="_blank" rel="noopener">View code &rarr;</a>
+    </article>
+  </div>
+</section>
+
+<section id="experience" class="reveal">
+  <h3 class="title"><span>03</span> Experience</h3>
+  <div class="timeline">
+    <div class="item">
+      <span class="dot"></span>
+      <h4>B.E. Information Science &amp; Engineering</h4>
+      <p class="tag">Dayananda Sagar College of Engineering, Bengaluru &middot; 2023 - 2027</p>
+      <p>CGPA 8.36/10, zero backlogs. Coursework: Data Structures &amp; Algorithms, OOP, DBMS, Operating Systems, Computer Networks.</p>
+    </div>
+    <div class="item">
+      <span class="dot"></span>
+      <h4>Full-Stack Project Work</h4>
+      <p class="tag">Academic &amp; personal projects</p>
+      <p>Owned delivery of Campus-Connect and Wanderlust: REST APIs, RBAC auth, SQL/NoSQL schemas, CI with Git, Maven and Jenkins, and AWS S3 + Ansible deployment scripts.</p>
+    </div>
+    <div class="item">
+      <span class="dot"></span>
+      <h4>Open source &amp; problem solving</h4>
+      <p class="tag">GitHub &middot; LeetCode</p>
+      <p>Active on GitHub with pull requests and documentation on my repositories, and practising DSA in Java on LeetCode.</p>
+    </div>
+  </div>
+</section>
+
+<section id="looking" class="reveal">
+  <h3 class="title"><span>04</span> What I'm Looking For</h3>
+  <div class="looking">
+    <p>I'm looking for <b>2027 SDE internships and fresher roles</b> where I can build real products and learn from a strong engineering team.</p>
+    <ul>
+      <li>Full-stack or backend software engineering (Java, Python, Node.js, React)</li>
+      <li>Teams that care about clean APIs, testing and shipping</li>
+      <li>Based in Bengaluru, open to other locations</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact" class="reveal">
+  <h3 class="title"><span>05</span> Contact</h3>
+  <div class="grid contact">
+    <a class="card" href="mailto:chidanandb16@gmail.com"><small>Email</small><b>chidanandb16@gmail.com</b></a>
+    <a class="card" href="https://github.com/ChidanandB16" target="_blank" rel="noopener"><small>GitHub</small><b>ChidanandB16</b></a>
+    <a class="card" href="https://www.linkedin.com/in/chidanand-b-78a537308/" target="_blank" rel="noopener"><small>LinkedIn</small><b>chidanand-b</b></a>
+    <a class="card" href="https://leetcode.com/u/LfJRB3LdRZ/" target="_blank" rel="noopener"><small>LeetCode</small><b>LfJRB3LdRZ</b></a>
+  </div>
+</section>
+</main>
+<footer>&copy; <span id="yr"></span> Chidanand B. Built with HTML, CSS and JavaScript.</footer>
+<script src="script.js"></script>
+</body>
+</html>
