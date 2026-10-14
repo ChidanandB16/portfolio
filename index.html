@@ -3,136 +3,134 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Chidanand B | Full-Stack Developer</title>
-<meta name="description" content="Portfolio of Chidanand B - Full-Stack Developer, ISE student at DSCE Bengaluru, looking for 2027 SDE internships and fresher roles.">
+<title>Chidanand B - Full-Stack Developer</title>
+<meta name="description" content="Chidanand B, final-year ISE student at DSCE Bengaluru. Full-stack developer building web apps, data pipelines and computer vision projects. Looking for 2027 SDE internships and fresher roles.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<canvas id="bg"></canvas>
-<div class="progress" id="progress"></div>
-<header class="nav">
-  <a href="#home" class="logo">CB<span>.</span></a>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#experience">Experience</a>
-    <a href="#looking">Looking For</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <button id="theme" aria-label="Toggle theme">&#9680;</button>
-</header>
+<canvas id="rings"></canvas>
+
+<header class="hero"><div class="w">
+  <div class="eyebrow">Chidanand B &mdash; Bengaluru<i></i></div>
+  <h1>I build full-stack apps, <em>from the database to the screen.</em></h1>
+  <p class="sub">Final-year Information Science &amp; Engineering student at DSCE, graduating in 2027. I like owning a feature end to end: the schema, the API, the interface and the deploy. <span id="typed"></span><span class="caret">|</span></p>
+  <div class="pill"><b></b>Looking for 2027 SDE internships and fresher roles. Bengaluru, or open to relocate.</div>
+  <div class="links">
+    <a href="mailto:chidanandb16@gmail.com">chidanandb16@gmail.com</a>
+    <a href="https://www.linkedin.com/in/chidanand-b-78a537308/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/ChidanandB16" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://leetcode.com/u/LfJRB3LdRZ/" target="_blank" rel="noopener">LeetCode</a>
+    <a href="https://drive.google.com/file/d/1T5jCrke6_y74jerCEDt1OOk4ZLUlLbIa/view" target="_blank" rel="noopener">Resume</a>
+  </div>
+</div><div class="scroll">SCROLL <span>&darr;</span></div></header>
 
 <main>
-<section id="home" class="hero">
-  <p class="hello">Hi, I'm</p>
-  <h1>Chidanand B</h1>
-  <h2 class="typing"><span id="typed"></span><span class="cursor">|</span></h2>
-  <p class="lead">Final-year Information Science &amp; Engineering student in Bengaluru. I build full-stack web apps from database to UI.</p>
-  <div class="cta">
-    <a class="btn primary" href="#projects">See my work</a>
-    <a class="btn" href="#contact">Get in touch</a>
-    <a class="btn" href="https://drive.google.com/file/d/1T5jCrke6_y74jerCEDt1OOk4ZLUlLbIa/view" target="_blank" rel="noopener">Resume</a>
-  </div>
-</section>
+<div class="stats w">
+  <div class="stat"><b data-n="8.36" data-d="2">8.36</b><small>CGPA, zero backlogs</small></div>
+  <div class="stat"><b data-n="4">4</b><small>featured projects</small></div>
+  <div class="stat"><b data-n="3">3</b><small>roles in Campus-Connect: student, lecturer, admin</small></div>
+  <div class="stat"><b data-n="2027">2027</b><small>graduating batch</small></div>
+</div>
 
-<section id="about" class="reveal">
-  <h3 class="title"><span>01</span> About Me</h3>
-  <div class="grid two">
+<div class="w">
+<section class="mf rv" id="about">
+  <div class="eyebrow">About me</div>
+  <h2 class="big"><span class="ln">I learn by shipping things</span><span class="ln">that <em>actually run.</em></span></h2>
+  <div class="cols2">
     <div>
-      <p>I'm a final-year B.E. student in Information Science &amp; Engineering at Dayananda Sagar College of Engineering, Bengaluru (graduating 2027, CGPA 8.36/10).</p>
-      <p>I like owning a feature end to end: designing REST APIs, modelling the database, building the interface, and wiring up the build and deploy pipeline. Strong foundations in data structures, algorithms, OOP, DBMS, operating systems and networks.</p>
-      <div class="stats">
-        <div><b data-count="8.36" data-dec="2">0</b><small>CGPA</small></div>
-        <div><b data-count="2027">0</b><small>Graduating</small></div>
-        <div><b data-count="4">0</b><small>Featured projects</small></div>
-      </div>
+      <p>I'm Chidanand, a final-year B.E. student in Information Science &amp; Engineering at Dayananda Sagar College of Engineering in Bengaluru. My CGPA is 8.36 out of 10 with no backlogs, and my coursework covers data structures and algorithms, OOP, DBMS, operating systems and computer networks.</p>
+      <p>What I enjoy most is the full path of a product. I design the REST APIs, model the database, build the interface, and then set up the pipeline that gets it online. Campus-Connect taught me role-based access with JWT and bcrypt. Wanderlust taught me how many small pieces (auth, image uploads, maps, sessions) it takes to make a listings app feel real.</p>
+      <p>Outside coursework I practise problem solving on LeetCode in Java, keep my repositories documented, and push myself into areas I haven't touched yet, like computer vision with YOLOv8 and cloud data pipelines on AWS.</p>
     </div>
-    <div class="skills" id="skills"></div>
-  </div>
-</section>
-
-<section id="projects" class="reveal">
-  <h3 class="title"><span>02</span> Projects</h3>
-  <div class="grid cards">
-    <article class="card tilt">
-      <h4>Campus-Connect</h4>
-      <p class="tag">Academic management platform</p>
-      <p>Centralised platform for academic operations, enrollments and material distribution, with role-based access for Student, Lecturer and Admin portals (JWT + bcrypt).</p>
-      <ul class="chips"><li>TypeScript</li><li>React.js</li><li>Java SpringBoot</li><li>PostgreSQL</li><li>MongoDB</li><li>Jenkins</li><li>Tailwind</li></ul>
-      <a href="https://github.com/ChidanandB16/CAMPUS-CONNECT" target="_blank" rel="noopener">View code &rarr;</a>
-    </article>
-    <article class="card tilt">
-      <h4>Wanderlust</h4>
-      <p class="tag">Airbnb-style stay listings app</p>
-      <p>Interactive accommodation platform: property listings, reviews and search, with geo-location metadata and map-based browsing.</p>
-      <ul class="chips"><li>Node.js</li><li>Express</li><li>EJS</li><li>JavaScript</li><li>Render</li></ul>
-      <a href="https://wanderlust-s9l5.onrender.com/listings" target="_blank" rel="noopener">Live demo &rarr;</a>
-      <a href="https://github.com/ChidanandB16/Wonderlust-AIRBNB" target="_blank" rel="noopener">View code &rarr;</a>
-    </article>
-    <article class="card tilt">
-      <h4>COVID Tracking Pipeline</h4>
-      <p class="tag">Data pipeline</p>
-      <p>Cloud-based COVID-19 data pipeline: ingests CSV data, processes it with Pandas, stores it on AWS S3 and visualises it with Streamlit and Plotly.</p>
-      <ul class="chips"><li>Python</li><li>Pandas</li><li>AWS S3</li><li>Streamlit</li><li>Plotly</li></ul>
-      <a href="https://github.com/ChidanandB16/covid-tracking-pipeline" target="_blank" rel="noopener">View code &rarr;</a>
-    </article>
-    <article class="card tilt">
-      <h4>Real-Time Object Surveillance</h4>
-      <p class="tag">AI / computer vision</p>
-      <p>AI-powered surveillance system that detects abandoned objects in real time using YOLOv8, ByteTrack and OSNet-based owner re-identification to improve security monitoring.</p>
-      <ul class="chips"><li>Python</li><li>YOLOv8</li><li>ByteTrack</li><li>OSNet</li></ul>
-      <a href="https://github.com/ChidanandB16/Real-Time-Object-Surveillance" target="_blank" rel="noopener">View code &rarr;</a>
-    </article>
-  </div>
-</section>
-
-<section id="experience" class="reveal">
-  <h3 class="title"><span>03</span> Experience</h3>
-  <div class="timeline">
-    <div class="item">
-      <span class="dot"></span>
-      <h4>B.E. Information Science &amp; Engineering</h4>
-      <p class="tag">Dayananda Sagar College of Engineering, Bengaluru &middot; 2023 - 2027</p>
-      <p>CGPA 8.36/10, zero backlogs. Coursework: Data Structures &amp; Algorithms, OOP, DBMS, Operating Systems, Computer Networks.</p>
-    </div>
-    <div class="item">
-      <span class="dot"></span>
-      <h4>Full-Stack Project Work</h4>
-      <p class="tag">Academic &amp; personal projects</p>
-      <p>Owned delivery of Campus-Connect and Wanderlust: REST APIs, RBAC auth, SQL/NoSQL schemas, CI with Git, Maven and Jenkins, and AWS S3 + Ansible deployment scripts.</p>
-    </div>
-    <div class="item">
-      <span class="dot"></span>
-      <h4>Open source &amp; problem solving</h4>
-      <p class="tag">GitHub &middot; LeetCode</p>
-      <p>Active on GitHub with pull requests and documentation on my repositories, and practising DSA in Java on LeetCode.</p>
+    <div class="rc">
+      <div><b>Now</b><span>Final year of B.E. in ISE at DSCE, preparing for placements.</span></div>
+      <div><b>Strong at</b><span>Java and Spring Boot, Node and Express, React and Next.js, SQL and MongoDB.</span></div>
+      <div><b>Curious about</b><span>System design, cloud on AWS, and AI/ML applications.</span></div>
+      <div><b>Working style</b><span>Own the feature end to end, write it down, ship it live.</span></div>
+      <div><b>Looking for</b><span>An engineering team where I can build real products and learn fast.</span></div>
     </div>
   </div>
 </section>
 
-<section id="looking" class="reveal">
-  <h3 class="title"><span>04</span> What I'm Looking For</h3>
-  <div class="looking">
-    <p>I'm looking for <b>2027 SDE internships and fresher roles</b> where I can build real products and learn from a strong engineering team.</p>
-    <ul>
-      <li>Full-stack or backend software engineering (Java, Python, Node.js, React)</li>
-      <li>Teams that care about clean APIs, testing and shipping</li>
-      <li>Based in Bengaluru, open to other locations</li>
-    </ul>
+<section class="proj" data-i="1"><div class="num">01</div>
+  <div class="body rv"><h2>Campus-Connect</h2><div class="tag">One platform for courses, materials and enrollments.</div>
+    <p>A web app for running an academic department. Students enroll in courses and download materials, lecturers manage the courses they teach, and admins manage users, each with their own portal.</p>
+    <p>Access is role-based, with JWT authentication and bcrypt password hashing. The frontend is built in TypeScript, and the project is wired with Git, Maven and Jenkins build workflows.</p>
+    <div class="chips"><span>Next.js</span><span>TypeScript</span><span>Tailwind CSS</span><span>Java Spring Boot</span><span>PostgreSQL</span><span>JWT</span></div>
+    <div class="btns"><a class="btn" href="https://department-ms.vercel.app/" target="_blank" rel="noopener">Live demo &rarr;</a><a class="btn" href="https://github.com/ChidanandB16/CAMPUS-CONNECT" target="_blank" rel="noopener">View code &rarr;</a></div></div>
+  <figure class="fig rv"><svg viewBox="0 0 300 330"><rect x="40" y="40" width="220" height="150" rx="8" style="--l:760"/><line x1="40" y1="70" x2="260" y2="70" style="--l:230"/><circle class="a" cx="58" cy="55" r="5" style="--l:40"/><rect x="58" y="90" width="60" height="80" rx="4" style="--l:300"/><rect x="130" y="90" width="112" height="30" rx="4" style="--l:300"/><rect class="a" x="130" y="132" width="112" height="38" rx="4" style="--l:300"/><path d="M80 230 h140 M110 260 h80 M80 290 h140" style="--l:200"/></svg><figcaption>Fig. 1 &mdash; three roles, one app</figcaption></figure></section>
+
+<section class="proj" data-i="2"><div class="num">02</div>
+  <div class="body rv"><h2>Wanderlust</h2><div class="tag">An Airbnb-style app for finding and sharing stays.</div>
+    <p>Users browse listings with photos, prices and locations, sign up and log in, create their own listings with image uploads, and leave ratings and reviews. Owners can edit or delete only their own listings.</p>
+    <p>Each listing is placed on a map, with the location geocoded when it's created. It's live on Render, so you can click around it.</p>
+    <div class="chips"><span>Node.js</span><span>Express</span><span>MongoDB</span><span>EJS</span><span>Passport</span><span>Cloudinary</span><span>Mapbox</span></div>
+    <div class="btns"><a class="btn" href="https://wanderlust-s9l5.onrender.com/listings" target="_blank" rel="noopener">Live demo &rarr;</a><a class="btn" href="https://github.com/ChidanandB16/Wonderlust-AIRBNB" target="_blank" rel="noopener">View code &rarr;</a></div></div>
+  <figure class="fig rv"><svg viewBox="0 0 300 330"><path d="M60 150 L150 70 L240 150 V270 H60 Z" style="--l:700"/><rect class="a" x="120" y="190" width="60" height="80" style="--l:280"/><circle cx="150" cy="140" r="16" style="--l:110"/><path class="a" d="M150 20 c-14 0 -22 10 -22 22 c0 16 22 38 22 38 s22 -22 22 -38 c0 -12 -8 -22 -22 -22z" style="--l:200"/></svg><figcaption>Fig. 2 &mdash; listings on a map</figcaption></figure></section>
+
+<section class="proj" data-i="3"><div class="num">03</div>
+  <div class="body rv"><h2>Real-Time Object Surveillance</h2><div class="tag">Spotting abandoned bags by tracking who they belong to.</div>
+    <p>A computer vision system that detects unattended baggage in video. YOLOv8s finds people and bags, ByteTrack follows them across frames, and OSNet re-identification links a bag to its owner.</p>
+    <p>Instead of using only distance and time, it uses the owner's identity and a dynamic risk score, which helps in crowded scenes. It runs on CPU and has a live Streamlit dashboard.</p>
+    <div class="chips"><span>Python</span><span>YOLOv8</span><span>ByteTrack</span><span>OSNet</span><span>OpenCV</span><span>Streamlit</span></div>
+    <div class="btns"><a class="btn" href="https://github.com/ChidanandB16/Real-Time-Object-Surveillance" target="_blank" rel="noopener">View code &rarr;</a></div></div>
+  <figure class="fig rv"><svg viewBox="0 0 300 330"><rect x="40" y="60" width="220" height="170" rx="6" style="--l:780"/><rect class="a" x="90" y="110" width="50" height="90" style="--l:280"/><circle cx="115" cy="95" r="12" style="--l:80"/><rect x="180" y="170" width="46" height="30" style="--l:160"/><path class="a" d="M60 270 h60 M180 270 h60" style="--l:140"/></svg><figcaption>Fig. 3 &mdash; detect, track, re-identify</figcaption></figure></section>
+
+<section class="proj" data-i="4"><div class="num">04</div>
+  <div class="body rv"><h2>COVID-19 Tracking Pipeline</h2><div class="tag">A small data pipeline from raw CSV to dashboard.</div>
+    <p>A Python pipeline that cleans a COVID-19 CSV (fixes dates, drops incomplete and duplicate rows, adds year and month), uploads the processed file to AWS S3, and shows the results in a dashboard.</p>
+    <p>The Streamlit dashboard has a country selector, case metrics, trend and ranking charts, and a data preview.</p>
+    <div class="chips"><span>Python</span><span>Pandas</span><span>AWS S3</span><span>Streamlit</span><span>Plotly</span></div>
+    <div class="btns"><a class="btn" href="https://github.com/ChidanandB16/covid-tracking-pipeline" target="_blank" rel="noopener">View code &rarr;</a></div></div>
+  <figure class="fig rv"><svg viewBox="0 0 300 330"><path d="M40 260 V60 M40 260 H260" style="--l:420"/><polyline class="a" points="60,220 110,170 150,190 200,110 250,80" style="--l:330"/><rect x="70" y="240" width="20" height="10" style="--l:80"/><rect x="120" y="230" width="20" height="20" style="--l:100"/><rect x="170" y="215" width="20" height="35" style="--l:130"/></svg><figcaption>Fig. 4 &mdash; clean, store, chart</figcaption></figure></section>
+
+<section class="mf rv" id="experience">
+  <div class="eyebrow">Experience &amp; education</div>
+  <h2 class="big"><span class="ln">Learning in public,</span><span class="ln"><em>one project at a time.</em></span></h2>
+  <div class="cols">
+    <div class="tl">
+      <div><small>2023 &ndash; 2027</small><h3>B.E. Information Science &amp; Engineering</h3><p>Dayananda Sagar College of Engineering, Bengaluru. CGPA 8.36/10, zero backlogs. DSA, OOP, DBMS, OS and computer networks.</p></div>
+      <div><small>Projects</small><h3>Full-stack project work</h3><p>Owned Campus-Connect and Wanderlust from schema to deploy: REST APIs, role-based auth, SQL and NoSQL databases, build workflows with Git, Maven and Jenkins, and AWS S3 with Ansible scripts.</p></div>
+      <div><small>Ongoing</small><h3>Open source habits and problem solving</h3><p>Pull requests and READMEs on my GitHub repositories, and regular DSA practice in Java on LeetCode.</p></div>
+    </div>
+    <div>
+      <div class="sk"><h3>Languages &amp; backend</h3><p>Java (Spring Boot), Python (Django), JavaScript (ES6+), TypeScript, Node.js, Express, REST APIs</p></div>
+      <div class="sk"><h3>Frontend</h3><p>React.js, Next.js, Angular, HTML5, CSS3, Tailwind CSS, Bootstrap</p></div>
+      <div class="sk"><h3>Databases</h3><p>PostgreSQL, MySQL, MongoDB, Mongoose</p></div>
+      <div class="sk"><h3>DevOps &amp; tools</h3><p>AWS (EC2, S3), Git, GitHub, Jenkins, Maven, Ansible, Postman, JWT</p></div>
+      <div class="sk"><h3>Core CS</h3><p>Data structures &amp; algorithms, system design, OOP, operating systems, AI/ML foundations</p></div>
+    </div>
   </div>
 </section>
 
-<section id="contact" class="reveal">
-  <h3 class="title"><span>05</span> Contact</h3>
-  <div class="grid contact">
-    <a class="card" href="mailto:chidanandb16@gmail.com"><small>Email</small><b>chidanandb16@gmail.com</b></a>
-    <a class="card" href="https://github.com/ChidanandB16" target="_blank" rel="noopener"><small>GitHub</small><b>ChidanandB16</b></a>
-    <a class="card" href="https://www.linkedin.com/in/chidanand-b-78a537308/" target="_blank" rel="noopener"><small>LinkedIn</small><b>chidanand-b</b></a>
-    <a class="card" href="https://leetcode.com/u/LfJRB3LdRZ/" target="_blank" rel="noopener"><small>LeetCode</small><b>LfJRB3LdRZ</b></a>
+<section class="mf rv" id="looking">
+  <div class="eyebrow">What I'm looking for</div>
+  <h2 class="big"><span class="ln">An internship or first role</span><span class="ln">where I can <em>build real things.</em></span></h2>
+  <div class="rc">
+    <div><b>Roles</b><span>2027 SDE internships and fresher roles: full-stack, backend or cloud.</span></div>
+    <div><b>Stack</b><span>Comfortable with Java, Python, Node.js and React. Happy to pick up what the team uses.</span></div>
+    <div><b>Team</b><span>People who care about clean APIs, testing and shipping, and who'll review my code honestly.</span></div>
+    <div><b>Location</b><span>Bengaluru, open to other cities and remote.</span></div>
   </div>
 </section>
+
+<section class="contact rv" id="contact">
+  <div class="eyebrow">Contact</div>
+  <h2>Let's build something <em>together.</em></h2>
+  <div class="btns" style="margin-top:34px">
+    <a class="btn" href="mailto:chidanandb16@gmail.com">Email me</a>
+    <a class="btn" href="https://www.linkedin.com/in/chidanand-b-78a537308/" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="https://github.com/ChidanandB16" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://leetcode.com/u/LfJRB3LdRZ/" target="_blank" rel="noopener">LeetCode</a>
+  </div>
+</section>
+</div>
 </main>
-<footer>&copy; <span id="yr"></span> Chidanand B. Built with HTML, CSS and JavaScript.</footer>
+<footer><div class="w">&copy; <span id="yr"></span> Chidanand B &middot; Bengaluru &middot; chidanandb16@gmail.com</div></footer>
+
+<div id="prog"><div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i></div><b id="pn">00</b><small>/ 06</small></div>
 <script src="script.js"></script>
 </body>
 </html>
